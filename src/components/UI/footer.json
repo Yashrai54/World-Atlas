@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "MdPlace",
+    "title": "Company",
+    "details":"Location"
+  },
+  {
+    "icon": "IoCallSharp",
+    "title": "Support",
+    "details": "Contact"
+  },
+  {
+    "icon": "TbMailPlus",
+    "title": "Legal",
+    "details":"Mail"
+  }
+]

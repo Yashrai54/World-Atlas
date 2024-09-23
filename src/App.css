@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* Define common colors, spacing, and fonts */
+:root {
+  --background-dark: #222;
+  --background-light: #333;
+  --text-color: white;
+  --hover-bg-color: #444;
+  --primary-color: black;
+  --border-radius: 10px;
+  --padding-small: 10px;
+  --padding-medium: 20px;
+  --font-family: "Inria Sans", sans-serif;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-small) var(--padding-medium);
+  background-color: var(--background-dark);
+}
+
+.nav h1 {
+  margin: 0;
+  padding: var(--padding-small) 0;
+  color: skyblue;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--padding-small);
+}
+
+.nav ul li {
+  padding: var(--padding-small) var(--padding-medium);
+  font-size: 0.9rem;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav ul li:hover {
+  background-color: var(--hover-bg-color);
+  border-radius: var(--border-radius);
+  transform: scale(1.05);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--padding-medium);
+  padding: var(--padding-medium);
+}
+
+.hero-content {
+  margin: var(--padding-small);
+  padding: var(--padding-medium);
+  background-color: var(--background-light);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.button {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  padding: var(--padding-small) var(--padding-medium);
+  border-radius: 40px;
+  border: 2px solid var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  background-color: skyblue;
+  color: black;
+}
+
+.button:hover {
+  background-color: var(--text-color);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+.hero-image {
+  object-fit: cover; /* Use cover for better image scaling */
+}
+
+.hero-image img {
+  margin: 3px;
+  border: 4px solid skyblue;
+  border-radius: 40px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--padding-medium);
+  padding: var(--padding-medium);
+}
+
+.container1 {
+  background-color: silver;
+  color: black;
+  border: 4px solid white;
+  border-radius: var(--border-radius);
+  text-align: center;
+  padding: var(--padding-small);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.contact1 {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.contact h2{
+  text-align: center;
+}
+
+.form-control {
+  color: white;
+  background-color: black;
+  margin: 5px;
+  padding: 10px;
+  width: 365px;
+}
+
+.submit-button {
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    padding: var(--padding-small);
+  }
+}
+/* General footer styling */
+.footer {
+  background-color: black;
+  padding: 40px 0;
+  color: #333;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Container styling for layout */
+.container-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styling for individual footer contact blocks */
+.footer-contact {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.footer-contact:hover {
+  transform: translateY(-5px); /* Slight hover effect */
+}
+
+.icon {
+  font-size: 24px;
+  color: #0077b6;
+  margin-right: 15px;
+}
+
+/* Footer text styling */
+.footer-text p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.footer-text p:first-child {
+  font-weight: bold;
+  font-size: 16px;
+  color: #0077b6;
+}
+
+.footer-text p:last-child {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    gap: 10px;
+  }
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  padding: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #25b09b;
+  --_m: 
+    conic-gradient(#0000 10%,#000),
+    linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+          mask: var(--_m);
+  -webkit-mask-composite: source-out;
+          mask-composite: subtract;
+  animation: l3 1s infinite linear;
+  margin: auto;
+  margin-top: 5px;
+}
+@keyframes l3 {to{transform: rotate(1turn)}}
+/* General card styles */
+.country-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  margin: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.country-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image styling */
+.country-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Information container */
+.countryInfo {
+  padding: 1rem;
+  text-align: left;
+}
+
+/* Text styling */
+.countryInfo p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Name styling */
+.countryInfo p:first-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .country-card {
+    max-width: 100%;
+  }
+}
+/* Container holding the cards */
+.country-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 1.5rem; /* Space between cards */
+  padding: 1rem;
+}
+
+/* General card styles */
+.country-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.country-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image styling */
+.country-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Information container */
+.countryInfo {
+  padding: 1rem;
+  text-align: left;
+}
+
+/* Text styling */
+.countryInfo p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Name styling */
+.countryInfo p:first-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .country-list {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for mid-sized screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .country-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .country-list {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Country information text styling */
+.country-para {
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.search-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-section input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 50%;
+}
+
+.search-section select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+

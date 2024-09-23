@@ -1,0 +1,45 @@
+{
+    "countries": [
+      {
+        "name": "Japan",
+        "fact": "Japan is home to more than 6,800 islands, but about 97% of its land area is covered by the four largest ones: Honshu, Hokkaido, Kyushu, and Shikoku."
+      },
+      {
+        "name": "Australia",
+        "fact": "Australia is wider than the moon. The diameter of Australia is about 4,000 km, while the moon's diameter is 3,474 km."
+      },
+      {
+        "name": "Brazil",
+        "fact": "Brazil is the only country in South America where Portuguese is the official language, due to its colonization by Portugal."
+      },
+      {
+        "name": "India",
+        "fact": "India has the largest postal network in the world, with over 150,000 post offices across the country."
+      },
+      {
+        "name": "Canada",
+        "fact": "Canada has the longest coastline of any country in the world, spanning over 202,080 km."
+      },
+      {
+        "name": "Iceland",
+        "fact": "Iceland does not have a standing army. It is one of the few countries in the world without any military forces."
+      },
+      {
+        "name": "Russia",
+        "fact": "Russia is so large that it spans 11 time zones, covering more territory than any other country."
+      },
+      {
+        "name": "Egypt",
+        "fact": "The Great Pyramid of Giza was the tallest man-made structure in the world for over 3,800 years, standing at 146.6 meters."
+      },
+      {
+        "name": "Norway",
+        "fact": "Norway is home to the Svalbard Global Seed Vault, which preserves seeds from around the world to ensure biodiversity in case of global crises."
+      },
+      {
+        "name": "Mexico",
+        "fact": "Mexico introduced chocolate, chillies, and corn to the world. The ancient civilizations of Mexico, like the Mayans, were the first to make chocolate."
+      }
+    ]
+  }
+  
